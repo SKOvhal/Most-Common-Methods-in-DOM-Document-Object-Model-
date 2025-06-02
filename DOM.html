@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- for id :
+ <h1 id="heading">Welcome To DOM </h1>
+    <button onclick="Head()">Click Here</button>
+    <script>
+    function Head(){
+    let a = document.getElementById("heading");
+    a.innerHTML = "Hello World"
+    }     -->
+
+
+    <!-- for className :
+   <h1>Item Set</h1>
+    <p class = "items">Item 1 </p>
+    <p class = "items">Item 1 </p>
+    <p class = "items">Item 1 </p>
+    <p class = "items">Item 1 </p>
+    <p class = "items">Item 1 </p>
+    <button onclick="Para()">Click Here</button>
+
+    <script>
+    function Para(){
+        let b = document.getElementsByClassName("items")
+        for(let i=0; i< b.length; i++){
+        b[i].style.backgroundColor = 'green';
+        b[i].style.color = 'black';
+    }
+    }
+
+    </script>
+-->
+    
+
+<!-- for QuerySelector :
+
+<h1 id="head">DOM QuerySelector</h1>
+    <p class="para">This is a paragraph.</p>
+<button onclick="ChangeContent()">click here</button>
+<script>
+    function ChangeContent() {
+       let heading  = document.querySelector('#head');
+       heading.innerHTML = "DOM Manipulation is fun!";
+        let message  = document.querySelector('.para');
+        message.innerHTML = "The content has been changed successfully!";
+    }
+</script>
+-->
+
+<!-- for Create Element :
+<h1>****DOM****</h1>
+    <ol id="item-list">
+        <li>item</li>
+        <ol>
+<button onclick="addItem()">click here </button>
+<script>
+    function addItem() {
+        let newItem =  document.createElement("li");
+        newItem.textContent = 'New Item';
+        let list = document.getElementById("item-list");
+        list.appendChild(newItem);  
+    }
+    </script>
+-->
+ 
+</body>
+</html>
